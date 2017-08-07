@@ -270,6 +270,7 @@ class SqlMemberSource
                     if (i > 0) {
                         sb.append(", ");
                     }
+                    i = 1;
                     sb.append(
                         sqlQuery.getDialect()
                             .generateCountExpression(colDef));
